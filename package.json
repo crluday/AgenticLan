@@ -1,0 +1,20 @@
+{
+  "name": "agenticlan",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Provider-agnostic, MCP-native agent desktop application.",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w @agenticlan/shared-types && npm run build -w @agenticlan/core && npm run build -w @agenticlan/desktop",
+    "dev": "npm run dev -w @agenticlan/desktop",
+    "typecheck": "npm run typecheck -w @agenticlan/shared-types && npm run typecheck -w @agenticlan/core && npm run typecheck -w @agenticlan/desktop",
+    "lint": "npm run lint -w @agenticlan/shared-types && npm run lint -w @agenticlan/core && npm run lint -w @agenticlan/desktop"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

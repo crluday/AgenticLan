@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "dist-electron",
+    "rootDir": "src",
+    "types": ["node"],
+    "composite": true,
+    "isolatedModules": false
+  },
+  "references": [
+    { "path": "../../apps/core" },
+    { "path": "../../packages/shared-types" }
+  ],
+  "include": ["src/main", "src/preload"]
+}

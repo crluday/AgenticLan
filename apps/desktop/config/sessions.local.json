@@ -1,0 +1,13 @@
+{
+  "sessions": [
+    {
+      "id": "default",
+      "title": "Default Session",
+      "agentModeId": "plan",
+      "createdAt": "2026-08-14T05:16:26.029Z",
+      "updatedAt": "2026-08-14T05:27:46.293Z",
+      "messageCount": 0,
+      "messages": []
+    }
+  ]
+}
